@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace Practica_2_WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/api/students")]
     public class StudentsController : ControllerBase
     {
         public StudentsController()
@@ -22,9 +22,9 @@ namespace Practica_2_WebApi.Controllers
             return new List<Student>();
         }
          [HttpPost]
-        public List<Student> GetStudent()
+        public Student CreateStudent([FromBody] string studentName)
         {
-            return new List<Student>();
+            return new Student();
         }
 
     }
