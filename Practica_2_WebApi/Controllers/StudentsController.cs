@@ -21,5 +21,11 @@ namespace Practica_2_WebApi.Controllers
         {
             return new List<Student>();
         }
+         [HttpPost]
+        public List<Student> GetStudent()
+        {
+            return new List<Student>();
+        }
+
     }
 }
