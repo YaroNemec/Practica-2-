@@ -24,7 +24,17 @@ namespace Practica_2_WebApi.Controllers
          [HttpPost]
         public Student CreateStudent([FromBody] string studentName)
         {
-            return new Student();
+            return new Student()
+            {
+                 NameStudent = studentName
+            };
+        }
+
+         [HttpPut]
+        public Student UpdateStudent([FromBody] Student estudiante)
+        {
+            estudiante.NameStudent = "updated";
+            return estudiante;
         }
 
     }
