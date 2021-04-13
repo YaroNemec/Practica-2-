@@ -3,3 +3,4 @@
 - un GetStudent
 - un Metodo CreateStudent
 - un Metodo UpdateStudent
+- un Metodo DeleteStudent
