@@ -38,7 +38,7 @@ namespace Practica_2_WebApi.Controllers
         }
 
          [HttpDelete] 
-        public Student DeleteStudent([FromBody] string studentName)
+        public Student DeleteStudent([FromBody] Student estudiante)
         {
             return new Student()
             {
